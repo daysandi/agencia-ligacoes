@@ -18,28 +18,22 @@ public class Ligacoes {
 	private Long central;
 	private Long uniorg;
 	private Long ramal;
-	private Long data_ligacao;
-	private String dia_semana;
+	private Long dataLigacao;
+	private String diaSemana;
 	private String mes;
-	private Long semana_mes;
-	private Long hora_ligacao;
-	private Long numero_entrada;
+	private Long semanaMes;
+	private Long horaLigacao;
+	private Long numeroEntrada;
 	private Long duracao;
 	private Long quantidade;
-	private String tipo_ramal;
+	private String tipoRamal;
 	private String tipo;
 	private Long pin;
-	private Long total_pf;
-	private Long total_pj;
+	private Long totalPf;
+	private Long totalPj;
 	private String  porte;
 	
 	
-	public Long getTotal_pj() {
-		return total_pj;
-	}
-	public void setTotal_pj(Long total_pj) {
-		this.total_pj = total_pj;
-	}
 	public String getRede() {
 		return rede;
 	}
@@ -76,42 +70,16 @@ public class Ligacoes {
 	public void setUniorg(Long uniorg) {
 		this.uniorg = uniorg;
 	}
-	public Long getData_ligacao() {
-		return data_ligacao;
-	}
-	public void setData_ligacao(Long data_ligacao) {
-		this.data_ligacao = data_ligacao;
-	}
-	public String getDia_semana() {
-		return dia_semana;
-	}
-	public void setDia_semana(String dia_semana) {
-		this.dia_semana = dia_semana;
-	}
+	
+	
 	public String getMes() {
 		return mes;
 	}
 	public void setMes(String mes) {
 		this.mes = mes;
 	}
-	public Long getHora_ligacao() {
-		return hora_ligacao;
-	}
-	public void setHora_ligacao(Long hora_ligacao) {
-		this.hora_ligacao = hora_ligacao;
-	}
-	public Long getNumero_entrada() {
-		return numero_entrada;
-	}
-	public void setNumero_entrada(Long numero_entrada) {
-		this.numero_entrada = numero_entrada;
-	}
-	public Long getSemana_mes() {
-		return semana_mes;
-	}
-	public void setSemana_mes(Long semana_mes) {
-		this.semana_mes = semana_mes;
-	}
+	
+	
 	public Long getDuracao() {
 		return duracao;
 	}
@@ -130,28 +98,72 @@ public class Ligacoes {
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
 	}
-	public String getTipo_ramal() {
-		return tipo_ramal;
-	}
-	public void setTipo_ramal(String tipo_ramal) {
-		this.tipo_ramal = tipo_ramal;
-	}
+	
 	public Long getPin() {
 		return pin;
 	}
 	public void setPin(Long pin) {
 		this.pin = pin;
 	}
-	public Long getTotal_pf() {
-		return total_pf;
-	}
-	public void setTotal_pf(Long total_pf) {
-		this.total_pf = total_pf;
-	}
+	
 	public String getPorte() {
 		return porte;
 	}
 	public void setPorte(String porte) {
 		this.porte = porte;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public Long getDataLigacao() {
+		return dataLigacao;
+	}
+	public void setDataLigacao(Long dataLigacao) {
+		this.dataLigacao = dataLigacao;
+	}
+	public String getDiaSemana() {
+		return diaSemana;
+	}
+	public void setDiaSemana(String diaSemana) {
+		this.diaSemana = diaSemana;
+	}
+	public Long getSemanaMes() {
+		return semanaMes;
+	}
+	public void setSemanaMes(Long semanaMes) {
+		this.semanaMes = semanaMes;
+	}
+	public Long getHoraLigacao() {
+		return horaLigacao;
+	}
+	public void setHoraLigacao(Long horaLigacao) {
+		this.horaLigacao = horaLigacao;
+	}
+	public Long getNumeroEntrada() {
+		return numeroEntrada;
+	}
+	public void setNumeroEntrada(Long numeroEntrada) {
+		this.numeroEntrada = numeroEntrada;
+	}
+	public String getTipoRamal() {
+		return tipoRamal;
+	}
+	public void setTipoRamal(String tipoRamal) {
+		this.tipoRamal = tipoRamal;
+	}
+	public Long getTotalPf() {
+		return totalPf;
+	}
+	public void setTotalPf(Long totalPf) {
+		this.totalPf = totalPf;
+	}
+	public Long getTotalPj() {
+		return totalPj;
+	}
+	public void setTotalPj(Long totalPj) {
+		this.totalPj = totalPj;
 	}
 }

@@ -15,8 +15,10 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import br.com.produban.ligacoes.agencia.entity.Ligacoes;
 
-public class LigacoesUtils <Ligacoes> Collection<Ligacoes> readingSheet(String path){
+
+public class LigacoesUtils Collection<Ligacoes> readingSheet(String path){
 
 	
         List<Ligacoes> list = new ArrayList<Ligacoes>();
@@ -73,11 +75,30 @@ public class LigacoesUtils <Ligacoes> Collection<Ligacoes> readingSheet(String p
 
                row = worksheet.getRow(i);  
                Ligacoes excel = new Ligacoes();
-               excel.setFirstCol(row.getCell(0).getStringCellValue());  
-               excel.setFirstCol(row.getCell(1).getStringCellValue());
-               excel.setFirstCol((int)row.getCell(2).getNumericCellValue()); 
+               excel.setCentral((long) row.getCell(0).getNumericCellValue());  
+               excel.setDataLigacao((long) row.getCell(1).getNumericCellValue());
+               excel.setDiaSemana(row.getCell(2).getStringCellValue()); 
+               excel.setDuracao((long) row.getCell(3).getNumericCellValue());
+               excel.setHoraLigacao((long) row.getCell(4).getNumericCellValue());
+               excel.setMes(row.getCell(5).getStringCellValue());
+               excel.setNome(row.getCell(6).getStringCellValue());
+               excel.setNumeroEntrada((long) row.getCell(7).getNumericCellValue());
+               excel.setPin((long) row.getCell(8).getNumericCellValue());
+               excel.setPorte(row.getCell(9).getStringCellValue());
+               excel.setQuantidade((long) row.getCell(10).getNumericCellValue());
+               excel.setRamal((long) row.getCell(11).getNumericCellValue());
+               excel.setRamal((long) row.getCell(12).getNumericCellValue());
+               excel.setRede(row.getCell(13).getStringCellValue());
+               excel.setRegional(row.getCell(14).getStringCellValue());
+               excel.setSemanaMes((long) row.getCell(15).getNumericCellValue());
+               excel.setTipo(row.getCell(16).getStringCellValue());
+               excel.setTipoRamal(row.getCell(17).getStringCellValue());
+               excel.setTotalPf((long) row.getCell(18).getNumericCellValue());
+               excel.setTotalPj((long) row.getCell(19).getNumericCellValue());
+               excel.setUniorg((long) row.getCell(20).getNumericCellValue());
+                            
+               
                System.out.println("");
-               System.out.println("Linha: " + linha);  
                System.out.println("");
            }    
 
